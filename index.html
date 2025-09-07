@@ -71,10 +71,10 @@
         window.onload = function () {
             // List of allowed domains
             const allowedDomains = [
-                'https://talhas.crickett.rf.gd/',
-                'https://wizardfc.official.rf.gd/',
-                'https://bhaichurikorbenna.servert.rf.gd/',
-                'https://wizardfcofficial.rf.gd/'
+                //'https://talhas.crickett.rf.gd/',
+                //'https://wizardfc.official.rf.gd/',
+                //'https://bhaichurikorbenna.servert.rf.gd/',
+                //'https://wizardfcofficial.rf.gd/'
             ];
 
             const referrer = document.referrer;
@@ -95,7 +95,7 @@
                 if (event.data && event.data.type === 'prevent-open') {
                     alert('Blocked a new tab from opening.');
                 }
-            });
+            })
 
             // Load the iframe
             iframe.src = 'https://enz.gdplayertv.to/live-tv/sky-sports-cricket/?embed=1';
